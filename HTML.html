@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kenneth's personal HTML</title>
+        <meta name="description" content="Everything Kenneth Payne has done with HTML">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="brython()">
+        <div id="wrapper">
+            <header>
+                <h1>Kenneth Payne's HTML showcase</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Python.html">Python</a></li>
+                    <li><a href="HTML.html">Html</a></li>
+                    <li><a href="Contact.html">Contact me</a></li>
+                </ul>
+            </nav>
+            <script type="python">
+                import turtle as t
+                import random as r
+                
+                COURTHEIGHT = 600
+                COURTWIDTH = 1000
+                leftpoints, rightpoints = 0, 0
+                fontsettings=('Ariel', 80, 'bold')
+                fontsettings2=('Ariel', 40, 'bold')
+                cont=True
+                speed=10
+                
+                wn = t.Screen()
+                wn.setup(width=1.0, height=1.0)
+                wn.title('PONG')
+                wn.bgcolor('black')
+                wn.register_shape('Ball.gif')
+                
+                ball = t.Turtle(shape='Ball.gif')
+                ball.penup()
+                ball.speed(5)
+                
+                #left player or player blue
+                blue = t.Turtle("square")
+                blue.color("blue")
+                blue.penup()
+                blue.speed(0)
+                blue.turtlesize(4,1)                   #turtlesize will stretch the turtle
+                blue.setx(-COURTWIDTH/2+10)
+                
+                lscore = t.Turtle(visible=False)
+                lscore.color('blue')
+                lscore.speed(0)
+                lscore.teleport(-COURTWIDTH/4, COURTHEIGHT/4+150)   #place the score in the top left area of the court
+                lscore.write(leftpoints, font=fontsettings)
+                
+                #right player or player red
+                red = t.Turtle("square")
+                red.color("red")
+                red.penup()
+                red.speed(0)
+                red.turtlesize(4,1)                   #turtlesize will stretch the turtle
+                red.setx(COURTWIDTH/2-10)
+                
+                rscore = t.Turtle(visible=False)
+                rscore.color('red')
+                rscore.speed(0)
+                rscore.teleport(COURTWIDTH/4, COURTHEIGHT/4+150)   #place the score in the top left area of the court
+                rscore.write(rightpoints, font=fontsettings)
+                
+                def drawCourt():
+                    court = t.Turtle(visible=False)
+                    court.color('white')
+                    court.seth(0)
+                    court.speed(0)
+                    #Top line
+                    court.teleport(-COURTWIDTH/2, COURTHEIGHT/2)
+                    court.fd(COURTWIDTH)
+                    #Bottom line
+                    court.teleport(-COURTWIDTH/2, -COURTHEIGHT/2)
+                    court.fd(COURTWIDTH)
+                    #Dashes
+                    court.teleport(0, -COURTHEIGHT/2)
+                    court.seth(90)
+                    for i in range(12):
+                        court.fd(26)
+                        court.penup()
+                        court.fd(26)
+                        court.pendown()
+                
+                def moveTheBall():                              #while(conditional statement)A
+                    global rightpoints, leftpoints, cont, speed
+                    ball.fd(speed)                                         #do section
+                    x,y=ball.position()                                 #Gets the x,y of ball
+                
+                    if y>=COURTHEIGHT/2 or y<=-COURTHEIGHT/2:           #check for top or bottom wall collision
+                        if y>=COURTHEIGHT/2:
+                            ball.sety(COURTHEIGHT/2-5)
+                        elif y<=-COURTHEIGHT/2:
+                            ball.sety(-COURTHEIGHT/2+5)
+                        ball.seth(-ball.heading())
+                    elif x>=COURTWIDTH/2 or x<=-COURTWIDTH/2:             #side wall collision = reset ball
+                        if x<-COURTWIDTH/2:
+                            rightpoints+=1
+                            rscore.clear()
+                            rscore.write(rightpoints, font=fontsettings)
+                        elif x>COURTWIDTH/2:
+                            leftpoints+=1
+                            lscore.clear()
+                            lscore.write(leftpoints, font=fontsettings)
+                        resetBall()                                     #   score a point
+                    else:
+                        PaddleCollision(blue,ball)
+                        PaddleCollision(red,ball)
+                    
+                    gameover()
+                    
+                    if cont == True:
+                        moverightpaddle()
+                        wn.ontimer(moveTheBall, 20)                         #iterator
+                    
+                def randomspeed():
+                    global speed
+                    choose=r.randint(0, r.randint(0, r.randint(0, 1)))
+                    if choose==1:
+                        speed*=2
+                
+                def resetBall():
+                    global speed
+                    ball.teleport(0,0)
+                    ball.speed(0)
+                    #flip a coin on who serves
+                    if r.randint(0,1)==0:
+                        ball.seth(r.randint(-30,30))
+                    else:
+                        ball.seth(r.randint(150,210))
+                    ball.speed(5)
+                    speed=10
+                 
+                def gameover():
+                    global cont
+                    if leftpoints >= 7:
+                        lscore.teleport(-200,-50)
+                        lscore.clear()
+                        lscore.write(f'blue has won!!!!!', font=fontsettings2)
+                        cont = False
+                    elif rightpoints >= 7:
+                        rscore.teleport(-200,-50)
+                        rscore.clear()
+                        rscore.write(f'red has won!!!!!', font=fontsettings2)
+                        cont = False
+                
+                def Leftup():
+                    if cont == True:
+                        if blue.ycor()<COURTHEIGHT/2-46:
+                            blue.sety(blue.ycor()+25)
+                        else:
+                            blue.sety(COURTHEIGHT/2-46)
+                def Leftdown():
+                    if cont == True:
+                        if blue.ycor()>-COURTHEIGHT/2+46:
+                            blue.sety(blue.ycor()-25)
+                        else:
+                            blue.sety(-COURTHEIGHT/2+46)
+                #def Rightup():
+                #    if cont == True:
+                #        if not(red.ycor()>=COURTHEIGHT/2-50):
+                #            red.sety(red.ycor()+30)
+                #        else:
+                #            red.sety(COURTHEIGHT/2-50)
+                #def Rightdown():
+                #    if cont == True:
+                #        if not(red.ycor()<=-COURTHEIGHT/2+50):
+                #            red.sety(red.ycor()-30)
+                #        else:
+                #            red.sety(-COURTHEIGHT/2+50)
+                
+                def PaddleCollision(paddle,ball):
+                    if abs(paddle.xcor()-ball.xcor())<=20 and abs(paddle.ycor()-ball.ycor())<=50:
+                        ball.seth(180-ball.heading())
+                        #to help prevent wall glitching
+                        if ball.xcor()>0: #rightpaddle collision
+                            ball.setx(ball.xcor()-5)
+                        else:             #left paddle collision
+                            ball.setx(ball.xcor()+5)
+                        ball.fd(10)
+                        randomspeed()
+                
+                def gamestart():
+                    global cont, rightpoints, leftpoints
+                    cont=True
+                    leftpoints, rightpoints = 0,0
+                    lscore.teleport(-COURTWIDTH/4, COURTHEIGHT/4)
+                    lscore.clear()
+                    lscore.write(leftpoints, font=fontsettings)
+                    rscore.teleport(COURTWIDTH/4, COURTHEIGHT/4)
+                    rscore.clear()
+                    rscore.write(leftpoints, font=fontsettings)
+                    resetBall()
+                    moveTheBall()
+                
+                def moverightpaddle():
+                    if red.ycor()<COURTHEIGHT/2-46 or red.ycor()>-COURTHEIGHT/2+46:
+                        if ball.ycor()<red.ycor()-40:
+                            red.sety(red.ycor()-25)
+                        elif ball.ycor()>red.ycor()+40:
+                            red.sety(red.ycor()+25)
+                    elif red.ycor()>COURTHEIGHT/2-46 or red.ycor()<-COURTHEIGHT/2+46:
+                        if red.ycor()>=COURTHEIGHT/2-46:
+                            red.sety(COURTHEIGHT/2-46)
+                        elif red.ycor()<=-COURTHEIGHT/2+46:
+                            red.sety(-COURTHEIGHT/2+46)
+                
+                #wn.onkeypress(resetBall, 'r')
+                #wn.onkeypress(Rightup, 'Up')
+                #wn.onkeypress(Rightdown, 'Down')
+                wn.onkeypress(Leftup, 'w')
+                wn.onkeypress(Leftdown, 's')
+                wn.onkeypress(gamestart, 'space')
+                wn.listen()
+                #mainloop
+                drawCourt()
+                resetBall()
+                moveTheBall()
+                wn.mainloop()
+            </script>
+        </div>
+    </body>
+</html>
