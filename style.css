@@ -51,3 +51,9 @@ input{
     width:80%;
     background-color: #F5F5F5;
 }
+
+.game{
+    display: flex;
+    justify-content: center;
+    background-color: #04f4aa
+}
