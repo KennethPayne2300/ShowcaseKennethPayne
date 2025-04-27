@@ -2,11 +2,12 @@ nav{
     position: fixed; /* no moving when flexing... */
     top: 0;
     left: 0;
-    text-align: right;
+    text-align: center;
     padding:-5em;
     padding-right: 0;
     width: 100%;
-    background-color: rgb(72, 106, 136);
+    background-color: #005F56;
+    font-size: 25px;
     margin: 0;
     z-index: 9999; /*this will make sure it is always on top*/
 }
@@ -18,42 +19,82 @@ nav a{
 nav ul{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    justify-content: center;
     margin: 0;
     font-size: 1.2em;
     list-style-type: none;
 }
 nav li{
+    display: inline;
     width: 7em;
     padding: 0 1em 0 1em; /*top right bottom left*/
-    display: inline;
 }
 /*event handler styling - interact with tag, something happens*/
-nav a:link{color:#3F2860}
-nav a:visited{color:#1caaaa}
-nav a:hover{color: #A26100;border:3px inset #333333;}
-
+nav a:link{color:#D1D5DB}
+nav a:hover{color: #7FFFD4;border:3px inset #333333;}
+header{
+    color: #4B0082;
+    font-size: 30px;
+}
+h2{
+    color: #005F56;
+}
+p{
+    color: #D1D5DB;
+}
 form{
-    border-bottom: 1px solid #000;
-    border-top: 1px solid #000;
+    border-bottom: 1px solid #4B0082;
+    border-top: 1px solid #4B0082;
     padding: 10px 0;
 }
 label, textarea, input{
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #D1D5DB;
 }
 input{
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    width: 225px;
 }
 /* id section */
 #wrapper{
     padding: 2em;
     margin:auto;
     width:80%;
-    background-color: #F5F5F5;
+    background-color: #0B0C10;
 }
-
+/* functions */
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 20px #5C4A60;
+    }
+    50% {
+        box-shadow: 0 0 40px #6C5A70;
+    }
+    100% {
+        box-shadow: 0 0 20px #5C4A60;
+    }
+}
+/* Classes */
 .game{
     display: flex;
     justify-content: center;
-    background-color: #04f4aa
+    background-color: #4C3A63;
+    border: 2px solid #4C3A63;
+    box-shadow: 0 0 20px #6C5A70;
+    border-radius: 10px;
+    animation: pulseGlow 3s infinite;
+}
+.code{
+    /* Chatgpt helped me with the filter */
+    filter: brightness(60%);
+}
+.medium{
+    height: 2px;
+    width: 100%;
+}
+.divider{
+    border: 2px #4B0082;
 }
