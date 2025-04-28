@@ -27,7 +27,7 @@ nav ul{
 nav li{
     display: inline;
     width: 7em;
-    padding: 0 1em 0 1em; /*top right bottom left*/
+    padding: 0 1em 0 0.5em; /*top right bottom left*/
 }
 /*event handler styling - interact with tag, something happens*/
 nav a:link{color:#D1D5DB}
@@ -38,6 +38,7 @@ header{
 }
 h2{
     color: #005F56;
+    font-size: 35px;
 }
 p{
     color: #D1D5DB;
@@ -79,6 +80,10 @@ input{
     }
 }
 /* Classes */
+.logo{
+    width:60px;
+    animation: pulseGlow 3s infinite;
+}
 .game{
     display: flex;
     justify-content: center;
@@ -87,16 +92,22 @@ input{
     box-shadow: 0 0 20px #6C5A70;
     border-radius: 10px;
     animation: pulseGlow 3s infinite;
+    min-width: 500px;
 }
 .code{
     /* Chatgpt helped me with the filter */
     filter: brightness(65%);
 }
-.medium{
+.small{
     height: 4px;
+}
+.medium{
+    height: 8px;
 }
 .divider{
     border: 2px solid #4B0082;
     background-color: #4B0082;
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
