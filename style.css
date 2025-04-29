@@ -7,6 +7,7 @@ nav{
     padding-right: 0;
     width: 100%;
     background-color: #005F56;
+    color: #D1D5DB;
     font-size: 25px;
     margin: 0;
     z-index: 9999; /*this will make sure it is always on top*/
@@ -30,7 +31,6 @@ nav li{
     padding: 0 1em 0 0.5em; /*top right bottom left*/
 }
 /*event handler styling - interact with tag, something happens*/
-nav a:link{color:#D1D5DB}
 nav a:hover{color: #7FFFD4;border:3px inset #333333;}
 header{
     color: #4B0082;
@@ -70,18 +70,23 @@ input{
 /* functions */
 @keyframes pulseGlow {
     0% {
-        box-shadow: 0 0 20px #5C4A60;
+        box-shadow: 0 0 10px var(--regglow);
     }
     50% {
-        box-shadow: 0 0 40px #6C5A70;
+        box-shadow: 0 0 30px var(--bigglow);
     }
     100% {
-        box-shadow: 0 0 20px #5C4A60;
+        box-shadow: 0 0 10px var(--regglow);
     }
 }
 /* Classes */
 .logo{
     width:60px;
+    border-radius: 100%;
+}
+.logo:hover{
+    --regglow: #A8EF60;
+    --bigglow: #B8FF70;
     animation: pulseGlow 3s infinite;
 }
 .game{
@@ -91,6 +96,8 @@ input{
     border: 2px solid #4C3A63;
     box-shadow: 0 0 20px #6C5A70;
     border-radius: 10px;
+    --regglow: #5C4A60;
+    --bigglow: #6C5A70;
     animation: pulseGlow 3s infinite;
     min-width: 500px;
 }
