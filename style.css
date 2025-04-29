@@ -43,10 +43,10 @@
         color: #005F56;
         font-size: 35px;
     }
-    p{
-        color: #D1D5DB;
-    }
     form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         border-bottom: 1px solid #4B0082;
         border-top: 1px solid #4B0082;
         padding: 10px 0;
@@ -62,11 +62,17 @@
         margin-bottom: 20px;
         width: 225px;
     }
+    form button{
+        width: 110px;
+        font-size: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     /* id section */
     #wrapper{
         padding: 2em;
         margin:auto;
-        width:80%;
+        width:90vw;
         background-color: #0B0C10;
         color: #D1D5DB;
     }
@@ -99,9 +105,10 @@
         --bigglow: #B8FF70;
         animation: pulseGlow 3s infinite;
     }
-    .game{
+    .game-background{
         display: flex;
         justify-content: center;
+        text-align: center;
         background-color: #4C3A63;
         border: 2px solid #4C3A63;
         box-shadow: 0 0 20px #6C5A70;
@@ -110,22 +117,23 @@
         --bigglow: #6C5A70;
         animation: pulseGlow 3s infinite;
         height: 850px;
-        min-width: 500px;
+        width: 100%;
+        padding-top: 20px;
     }
-    .play{
+    .game{
+        display: block;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
-        width:100%;
-        height:750;
     }
     .button{
-        display: block;
+        display: flex;
         position: relative;
-        width: auto;
+        top: -100px;
+        width: 300px;
+        justify-self: center;
         height: 70px;
         background-color: #7FFFD4;
-        top: 750px;
-        left: -600px;
         font-size: 70px;
     }
     .code{
@@ -214,7 +222,6 @@
     #wrapper{
         padding: 2em;
         margin:auto;
-        width:80%;
         background-color: #0B0C10;
         color: #D1D5DB;
     }
@@ -247,7 +254,7 @@
         --bigglow: #B8FF70;
         animation: pulseGlow 3s infinite;
     }
-    .game{
+    .game-background{
         display: flex;
         justify-content: center;
         background-color: #4C3A63;
@@ -258,6 +265,9 @@
         --bigglow: #6C5A70;
         animation: pulseGlow 3s infinite;
         height: 850px;
+    }
+    .game{
+        justify-self: center;
     }
     .button{
         display: block;
