@@ -12,9 +12,11 @@ nav{
     margin: 0;
     z-index: 9999; /*this will make sure it is always on top*/
 }
+a{
+    text-decoration: none;
+}
 nav a{
     text-align: center;
-    text-decoration: none;
     display: block;
 }
 nav ul{
@@ -31,7 +33,7 @@ nav li{
     padding: 0 1em 0 0.5em; /*top right bottom left*/
 }
 /*event handler styling - interact with tag, something happens*/
-nav a:hover{color: #7FFFD4;border:3px inset #333333;}
+nav .link:hover{color: #7FFFD4;border:3px inset #333333;}
 header{
     color: #4B0082;
     font-size: 30px;
@@ -68,6 +70,7 @@ input{
     color: #D1D5DB;
 }
 /* functions */
+/* Chatgpt helped me with this */
 @keyframes pulseGlow {
     0% {
         box-shadow: 0 0 10px var(--regglow);
@@ -99,14 +102,29 @@ input{
     --regglow: #5C4A60;
     --bigglow: #6C5A70;
     animation: pulseGlow 3s infinite;
+    height: 850px;
     min-width: 500px;
+}
+.play{
+    width:58.3%;
+    height:750;
+}
+.button{
+    display: block;
+    position: relative;
+    width: auto;
+    height: 70px;
+    background-color: #7FFFD4;
+    top: 750px;
+    left: -600px;
+    font-size: 70px;
 }
 .code{
     /* Chatgpt helped me with the filter */
     filter: brightness(65%);
 }
 .small{
-    height: 4px;
+    height: 2px;
 }
 .medium{
     height: 8px;
