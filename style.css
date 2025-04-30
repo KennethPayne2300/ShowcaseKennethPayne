@@ -34,7 +34,12 @@
         padding: 0 1em 0 0.5em; /*top right bottom left*/
     }
     /*event handler styling - interact with tag, something happens*/
-    nav .link:hover{color: #7FFFD4;border:3px inset #333333;}
+    nav .link:hover{
+        color: #7FFFD4;
+        --regglow: #40E0D0;
+        --bigglow: #E3FFFB;
+        animation: pulseGlow 3s infinite;
+    }
     header{
         color: #4B0082;
         font-size: 30px;
@@ -42,6 +47,10 @@
     h2{
         color: #005F56;
         font-size: 35px;
+    }
+    h3{
+        color: #6B4FCF;
+        font-size: 25px;
     }
     form{
         display: flex;
@@ -198,6 +207,10 @@
     h2{
         color: #005F56;
         font-size: 35px;
+    }
+    h3{
+        color:#005F56;
+        font-size: 20px;
     }
     p{
         color: #D1D5DB;
