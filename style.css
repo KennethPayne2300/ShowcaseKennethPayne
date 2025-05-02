@@ -30,7 +30,7 @@ nav ul{
 nav li{
     display: inline;
     width: 7em;
-    padding: 0 1em 0 0.5em; /*top right bottom left*/
+    padding: 0.5em 1em 0 0.5em; /*top right bottom left*/
 }
 /*event handler styling - interact with tag, something happens*/
 nav .link:hover{
@@ -102,8 +102,20 @@ footer a{
     }
 }
 /* Classes */
+.columns{
+    display: flex;
+    justify-content: space-between;
+    float: left; 
+    width: 45%;
+    height: 150px;
+	padding: 20px;
+    margin: 10px;
+    border: 1px solid #000033;
+}
 .logo{
-    width:60px;
+    width:70px;
+    height: auto;
+    padding: 0.5em 1em 0 0.5e;
     border-radius: 100%;
 }
 .logo:hover{
