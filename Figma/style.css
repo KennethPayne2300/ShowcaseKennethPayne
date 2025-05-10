@@ -1,0 +1,252 @@
+h2{
+    color: #FFF;
+    font-family: Judson;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h5{
+    position: absolute;
+    left: 70px;
+    top: 500px;
+    color: white;
+    font-family: Judson;
+    font-weight: 400;
+}
+
+img{
+    width: 312px;
+    height: 312px;
+    left: 150px;
+    top: 150px;
+    position: absolute;
+    transform-origin: top left;
+    border-radius: 50%;
+}
+
+form input{
+    align-self: center;
+    width: 392px;
+}
+
+form{
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    width: auto;
+    left: 444px;
+    flex-direction: column;
+}
+
+form figure{
+    font-size: 12px;
+}
+
+.background{
+    height: auto;
+    position: relative;
+    background: white;
+}
+
+.NAme{
+    position: absolute;
+    left: 532px;
+    top: 32px;
+}
+
+.top{
+    position: absolute;
+    width: 1280px;
+    height: 1420px;
+    left: 0px;
+    top: 0px;
+    background: #E29284;
+}
+
+.bottom{
+    position: absolute;
+    top: 1995px;
+    left: 0px;
+    width: 1280px;
+    height: 800px;
+    background: #E29284;
+    margin-top: 100px;
+}
+
+.button{
+    position: absolute;
+    left: 1090px;
+    top: 43px;
+    color: #E29284;
+    font-size: 16px;
+    font-family: Judson;
+    font-weight: 400;
+    width: 133px;
+    height: 48px;
+}
+
+.about{
+    width: 567px;
+    left: 546px;
+    top: 169px;
+    position: absolute;
+    color: white;
+    font-size: 62px;
+    font-family: Judson;
+    font-weight: 400;
+    line-height: 78px;
+}
+
+.label{
+    left: 191px;
+    position: absolute;
+    color: white;
+    font-size: 32px;
+    font-family: Judson;
+    font-weight: 400;
+}
+
+.specialties{
+    display: inline-flex;
+    top: 1136px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.specialty{
+    color: white;
+    font-size: 19px;
+    font-family: Judson;
+    font-weight: 400;
+}
+
+.info{
+    width: 422px;
+    left: 691px;
+    top: 617px;
+    position: absolute;
+    color: white;
+    font-size: 32px;
+    font-family: Judson;
+    font-weight: 400;
+}
+
+.icon{
+    width: 72px;
+    height: 72px;
+    left: 660px;
+    top: 1500px;
+    position: absolute;
+    background: #4A5568;
+    border-radius: 50%;
+}
+
+.symbol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.projects{
+    display: inline-flex;
+    left: 765px;
+    top: 1496px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.link{
+    color: #E29284;
+    font-size: 18px;
+    font-family: Judson;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.projectdesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.projecttype{
+    width: 422px;
+    color: #4A5568;
+    font-size: 32px;
+    font-family: Judson;
+    font-weight: 400;
+    margin-bottom: -20px;
+}
+
+.description{
+    width: 348px;
+    color: #4A5568;
+    font-size: 18px;
+    font-family: Judson;
+    font-weight: 400;
+    margin-bottom: 90px;
+}
+
+.bottom .description{
+    color: #FFF;
+    text-align: center;
+    font-family: Judson;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.message{
+    height: 171px;
+}
+
+#mission{
+    top: 617px;
+}
+
+#specialties{
+    top: 1100px;
+}
+
+#column1{
+    left: 691px;
+}
+
+#column2{
+    left: 924px;
+}
+
+#react{
+    top: 1670px;
+}
+
+#node{
+    top: 1850px;
+}
+
+#projects{
+    top: 1496px;
+    color: black;
+}
+
+#wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1280px;
+}
