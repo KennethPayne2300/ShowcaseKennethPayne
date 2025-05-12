@@ -156,18 +156,18 @@ footer a{
     margin-bottom: 20px;
 }
 @media (min-width: 700px) {
-    #mobile{
+    .mobile{
         display: none;
     }
-    #desktop{
+    .desktop{
         display: flex;
     }
 }
 @media (max-width: 700px) {
-    #mobile{
+    .mobile{
         display: flex;
     }
-    #desktop{
+    .desktop{
         display: none;
     }
 }
