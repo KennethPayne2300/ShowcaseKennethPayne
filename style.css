@@ -28,6 +28,9 @@ a{
     text-decoration: none;
     color: #4B0082;
 }
+.websitelink :visited{
+    color: #00AF56;
+}
 nav a{
     text-align: center;
     display: block;
@@ -58,11 +61,11 @@ header{
     font-size: 30px;
 }
 h2{
-    color: #005F56;
+    color: #00AF56;
     font-size: 35px;
 }
 h3, h4{
-    color: #6B4FCF;
+    color: #6EAFCF;
     font-size: 25px;
 }
 footer a{
