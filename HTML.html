@@ -25,16 +25,10 @@
             <main>
                 <table>
                     <tr>
-                        <th class="tabs"><button><h2 id="nextech">Nextech</h2></button></th>
-                        <th class="tabs"><button><h2 id="sictc">Sictc</h2></button></th>
+                        <th class="tabs"><button id="nextechbtn"><h2 class="tab">Nextech</h2></button></th>
+                        <th class="tabs"><button id="sictcbtn"><h2 class="tab" >Sictc</h2></button></th>
                     </tr>
                 </table>
-                <script>
-                    const nextech = document.getElementById('nextech');
-                    const sictc = document.getElementById('sictc');
-
-                    //console.log(nextech, sictc)
-                </script>
                 <div class="small divider"></div>
                 <div id="Nextech">
                     this is empty right now
@@ -49,6 +43,22 @@
                     <a href="Valentines/index.html"><h2>Valentines webpage</h2></a>
                     <p>This was also made in the class because we had to do something for valentines day but as an aroace (Aromantic and asexual) I did not want to do a love thing so I did it as a friend thing instead.</p>
                 </div>
+                <script>
+                    const nextech = document.getElementById('nextech');
+                    const nextechbtn = document.getElementById('nextechbtn');
+                    const sictc = document.getElementById('sictc');
+                    const sictcbtn = document.getElementById('sictcbtn');
+                    
+                    //console.log(nextech, sictc)
+                    if(nextechbtn.click() == true){
+                        nextech.style.display(flex);
+                        sictc.style.display(none);
+                    }
+                    else if(sictcbtn.click() == true){
+                        nextech.style.display(none);
+                        sictc.style.display(flex)
+                    }
+                </script>
             </main>
             <footer>
                 <p>

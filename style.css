@@ -99,9 +99,11 @@ footer a{
 .tabs{
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
+    width: 50%;
     padding-top: 10px;
-    font-size: 30px;
-    width: 50%
+}
+.tab{
+    margin: 0px;
 }
 .desc{
     float: right;
