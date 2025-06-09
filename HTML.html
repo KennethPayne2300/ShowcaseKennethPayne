@@ -30,10 +30,10 @@
                     </tr>
                 </table>
                 <div class="small divider"></div>
-                <div id="Nextech">
+                <div id="nextech">
                     this is empty right now
                 </div>
-                <div id="Sictc">
+                <div id="sictc" style="display: none;">
                     <a href="Bootcamp/Index.html"><h2>Fake BootCamp</h2></a>
                     <p>This fake bootcamp website was made in my SICTC Computer Science class</p>
                     
@@ -48,15 +48,25 @@
                     const nextechbtn = document.getElementById('nextechbtn');
                     const sictc = document.getElementById('sictc');
                     const sictcbtn = document.getElementById('sictcbtn');
+                    var btn = false
+
+                    nextechbtn.onclick = function() {
+                        btn = false;
+                    };
+                    sictcbtn.onclick = function() {
+                        btn = true;
+                    };
                     
-                    //console.log(nextech, sictc)
-                    if(nextechbtn.click() == true){
-                        nextech.style.display(flex);
-                        sictc.style.display(none);
+                    //console.log(nextech, sictc);
+                    if(!btn){
+                        nextech.style.display = "flex";
+                        sictc.style.display = "none";
+                        console.log("nextech true");
                     }
-                    else if(sictcbtn.click() == true){
-                        nextech.style.display(none);
-                        sictc.style.display(flex)
+                    else if(btn){
+                        nextech.style.display = "none";
+                        sictc.style.display = "flex";
+                        console.log("sictc true");
                     }
                 </script>
             </main>
