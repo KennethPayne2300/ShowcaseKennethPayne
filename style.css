@@ -81,6 +81,9 @@ footer a{
     background-color: #4F6A64;
     color: #E0E2E6;
 }
+#sictc{
+    display: none;
+}
 
 /* functions */
 /* Chatgpt helped me with this */

@@ -11,7 +11,7 @@
     </head>
     <body id="wrapper">
             <header>
-                <h1>Kenneth Payne's HTML showcase</h1>
+                <h1>Kenneth Payne's HTML Showcase</h1>
             </header>
             <nav>
                 <ul>
@@ -25,13 +25,14 @@
             <main>
                 <table>
                     <tr>
-                        <th class="tabs"><button id="nextechbtn"><h2 class="tab">Nextech</h2></button></th>
-                        <th class="tabs"><button id="sictcbtn"><h2 class="tab" >Sictc</h2></button></th>
+                        <th class="tabs"><button id="nextechbtn" onclick="switchtabs('nextech')"><h2 class="tab">Nextech</h2></button></th>
+                        <th class="tabs"><button id="sictcbtn" onclick="switchtabs('sictc')"><h2 class="tab" >Sictc</h2></button></th>
                     </tr>
                 </table>
                 <div class="small divider"></div>
                 <div id="nextech">
-                    this is empty right now
+                    <a href="Change for good website/index.html"><h2>LGBTQ+ have rights</h2></a>
+                    <p>This is a change for good website that I made in nextech, basically telling people about how even though we came a long way there is still bad stuff happening to people in the LGBTQ+ community based on the fact they are in the LGBTQ+ community.</p>
                 </div>
                 <div id="sictc" style="display: none;">
                     <a href="Bootcamp/Index.html"><h2>Fake BootCamp</h2></a>
@@ -43,32 +44,7 @@
                     <a href="Valentines/index.html"><h2>Valentines webpage</h2></a>
                     <p>This was also made in the class because we had to do something for valentines day but as an aroace (Aromantic and asexual) I did not want to do a love thing so I did it as a friend thing instead.</p>
                 </div>
-                <script>
-                    const nextech = document.getElementById('nextech');
-                    const nextechbtn = document.getElementById('nextechbtn');
-                    const sictc = document.getElementById('sictc');
-                    const sictcbtn = document.getElementById('sictcbtn');
-                    var btn = false
-
-                    nextechbtn.onclick = function() {
-                        btn = false;
-                    };
-                    sictcbtn.onclick = function() {
-                        btn = true;
-                    };
-                    
-                    //console.log(nextech, sictc);
-                    if(!btn){
-                        nextech.style.display = "flex";
-                        sictc.style.display = "none";
-                        console.log("nextech true");
-                    }
-                    else if(btn){
-                        nextech.style.display = "none";
-                        sictc.style.display = "flex";
-                        console.log("sictc true");
-                    }
-                </script>
+                <script src="switchtabs.js"></script>
             </main>
             <footer>
                 <p>
