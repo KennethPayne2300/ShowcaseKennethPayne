@@ -1,0 +1,28 @@
+body{
+    background-color: crimson;
+}
+#wrapper{
+    text-align: center;
+    padding-top: 3em;
+    margin:auto;
+    height: 100vh;
+    width:80vw;
+    background-color: green;
+    color: #111;
+}
+.game-container{
+    background-color: lightgreen;
+    width: 500px;
+    height: 500px;
+    justify-self: center;
+}
+.players{
+    display: flex;
+    justify-content: space-between;
+}
+.player{
+    justify-self: center;
+    width: 225px;
+    background-repeat: no-repeat;
+    margin:10px;
+}
