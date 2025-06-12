@@ -1,0 +1,155 @@
+/* When someone enters your game, you only want them to see the opening and the option buttons. The code below will use the display property to hide certain parts of the story. Remove the comments from the code below when you're ready for that step!*/
+
+
+.screen-one,
+.screen-two,
+.screen-three,
+.screen-four,
+.screen-five,
+.screen-six,
+.screen-seven,
+.screen-eight,
+.screen-nine,
+.screen-ten,
+.screen-eleven,
+.screen-twelve,
+.screen-thirteen,
+.screen-fourteen {
+   display: none;
+}
+
+
+
+/* Feel free to change any of the styling below!*/
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the body with a background color or image if desired */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the title of your story */
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style the story opening container */
+.story-opening {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the story image */
+.story-opening img {
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Style the story opening message */
+.story-opening h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style the buttons container */
+.buttons {
+    margin: 20px;
+}
+
+/* Style the option buttons */
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.reset {
+    display: none;
+}
+
+/* Style the screens for option one and option two */
+.screen-one, 
+.screen-two, 
+.screen-three, 
+.screen-four, 
+.screen-five,
+.screen-six, 
+.screen-seven, 
+.screen-eight,
+.screen-nine,
+.screen-ten,
+.screen-eleven,
+.screen-twelve,
+.screen-thirteen,
+.screen-fourteen {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+/* Style the images in the screens */
+.screen-one img,
+.screen-two img,
+.screen-three img,
+.screen-four img,
+.screen-five img,
+.screen-six img,
+.screen-seven img,
+.screen-eight img,
+.screen-nine img,
+.screen-ten img,
+.screen-eleven img,
+.screen-twelve img,
+.screen-thirteen img,
+.screen-fourteen img {
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Style the text in the screens */
+.screen-one h1,
+.screen-two h1,
+.screen-three h1,
+.screen-four h1,
+.screen-five h1,
+.screen-six h1,
+.screen-seven h1,
+.screen-eight h1,
+.screen-nine h1,
+.screen-ten h1,
+.screen-eleven h1,
+.screen-twelve h1,
+.screen-thirteen h1,
+.screen-fourteen h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
