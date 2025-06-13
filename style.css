@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+SC&display=swap');
+
 table{
     display: flex;
     justify-self: center;
@@ -56,7 +58,9 @@ nav .link:hover{
 }
 header{
     color: #b9aed5;
-    font-size: 30px;
+    h1 {
+        font-size: 90px;
+    }
 }
 h2{
     color: #68cf16;
@@ -77,13 +81,17 @@ button{
 footer a{
     color: #D2FFF9;
 }
+p{
+    font-size: 20px;
+}
 /* id section */
 #wrapper{
     padding-top: 3em;
     margin:auto;
     width:90vw;
-    background-color: #193c6b;
-    color: #b9aed5;
+    background-color: #143157;
+    color: #D0A453;
+    font-family: WDXL Lubrifont SC;
 }
 #sictc{
     display: none;
