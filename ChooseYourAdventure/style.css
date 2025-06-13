@@ -30,7 +30,8 @@ body {
 /* Style the body with a background color or image if desired */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #616161;
+    color: #ce3019;
     text-align: center;
     padding: 20px;
 }
@@ -44,8 +45,9 @@ body {
 
 /* Style the story opening container */
 .story-opening {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-image: linear-gradient(to left, #221c1d, #daba7f);
+    width: 70%;
+    margin: auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -85,6 +87,21 @@ button {
 
 button:hover {
     background-color: #0056b3;
+    --regglow: #1066c3;
+    --bigglow: #2076d3;
+    animation: pulseGlow 3s infinite;
+}
+
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 20px var(--regglow);
+    }
+    50% {
+        box-shadow: 0 0 40px var(--bigglow);
+    }
+    100% {
+        box-shadow: 0 0 20px var(--regglow);
+    }
 }
 
 .reset {
@@ -92,6 +109,32 @@ button:hover {
 }
 
 /* Style the screens for option one and option two */
+.screen-one,
+.screen-three, 
+.screen-five,
+.screen-seven,
+.screen-nine,
+.screen-eleven,
+.screen-thirteen {
+    background-color: #daba7f;
+    --regglow: #eaca8f;
+    --bigglow: #fada9f;
+    animation: pulseGlow 3s infinite;
+}
+
+.screen-two,
+.screen-four,
+.screen-six,
+.screen-eight,
+.screen-ten,
+.screen-twelve,
+.screen-fourteen {
+    background-color: #221c1d;
+    --regglow: #322c2d;
+    --bigglow: #423c3d;
+    animation: pulseGlow 3s infinite;
+}
+
 .screen-one, 
 .screen-two, 
 .screen-three, 
@@ -106,11 +149,10 @@ button:hover {
 .screen-twelve,
 .screen-thirteen,
 .screen-fourteen {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    width: 70%;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: auto;
     margin-bottom: 10px;
 }
 

@@ -31,7 +31,7 @@ a{
 nav a{
     text-align: center;
     display: block;
-    border-radius: 40%;
+    border-radius: 40px;
     color: #1f1128;
 }
 nav ul{
@@ -69,7 +69,10 @@ h3, h4{
 button{
     background: none;
     border: none;
-    border-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-top: 0px;
+    padding-top: 15px;
 }
 footer a{
     color: #D2FFF9;
@@ -107,7 +110,6 @@ footer a{
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     width: 50%;
-    padding-top: 10px;
 }
 .tab{
     margin: 0px;

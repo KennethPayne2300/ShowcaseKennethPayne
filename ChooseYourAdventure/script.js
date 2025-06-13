@@ -19,7 +19,7 @@ const reset = document.querySelector(".reset");
 
 let screenNumber = 0;
 // console.log(optionOneScreen, optionTwoScreen)
-console.log(screenOne.style.display);
+// console.log(screenOne.style.display);
 
 // When you're ready to make event handlers, uncomment the code below. 
 //  - Then fill in the blanks with the correct variables.
@@ -128,8 +128,9 @@ reset.addEventListener("click", function() {
     screenThirteen.style.display = "none";
     screenFourteen.style.display = "none";
     optionOnebtn.style.display = "inline";
-    optionOnebtn.innerHTML = "go left";
+    optionOnebtn.innerHTML = "Go left";
     optionTwobtn.style.display = "inline";
-    optionTwobtn.innerHTML = "go right";
+    optionTwobtn.innerHTML = "Go right";
     reset.style.display = "none";
-})
+    screenNumber = 0;
+});
