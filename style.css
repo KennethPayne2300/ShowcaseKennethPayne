@@ -190,6 +190,12 @@ footer a{
     .desktop{
         display: flex;
     }
+    .profile {
+        float: right;
+        width: 300px;
+        height: auto;
+        border-radius: 50%;
+    }
 }
 @media (max-width: 700px) {
     .mobile{
@@ -197,6 +203,11 @@ footer a{
     }
     .desktop{
         display: none;
+    }
+    .profile {
+        width: 300px;
+        height: auto;
+        border-radius: 50%;
     }
 }
 
