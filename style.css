@@ -3,7 +3,7 @@ table{
     justify-self: center;
 }
 td, th{
-    border:2px solid #4B0082;
+    border:2px solid #d8b28a;
 }
 img{
     height: 150px;
@@ -12,16 +12,17 @@ img{
 }
 nav{
     position: fixed; /* no moving when flexing... */
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 150px;
     text-align: center;
     padding:-5em;
     padding-right: 0;
-    width: 100%;
-    background-color: #005F56;
+    width: 80%;
+    background-color: #d02d3a;
     color: #D1D5DB;
     font-size: 25px;
-    margin: 0;
+    margin: auto;
+    border-radius: 25px;
     z-index: 9999; /*this will make sure it is always on top*/
 }
 a{
@@ -31,7 +32,7 @@ nav a{
     text-align: center;
     display: block;
     border-radius: 40%;
-    color: #4B0082;
+    color: #1f1128;
 }
 nav ul{
     display: flex;
@@ -54,19 +55,19 @@ nav .link:hover{
     animation: pulseGlow 3s infinite;
 }
 header{
-    color: #4B0082;
+    color: #b9aed5;
     font-size: 30px;
 }
 h2{
-    color: #52FFA5;
+    color: #68cf16;
     font-size: 35px;
 }
 h3, h4{
-    color: #6EAFCF;
+    color: #74ccde;
     font-size: 25px;
 }
 button{
-    background-color: #4F6A64;
+    background: none;
     border: none;
     border-radius: 50%;
 }
@@ -78,8 +79,8 @@ footer a{
     padding-top: 3em;
     margin:auto;
     width:90vw;
-    background-color: #4F6A64;
-    color: #E0E2E6;
+    background-color: #193c6b;
+    color: #b9aed5;
 }
 #sictc{
     display: none;
@@ -89,13 +90,13 @@ footer a{
 /* Chatgpt helped me with this */
 @keyframes pulseGlow {
     0% {
-        box-shadow: 0 0 10px var(--regglow);
+        box-shadow: 0 0 20px var(--regglow);
     }
     50% {
-        box-shadow: 0 0 30px var(--bigglow);
+        box-shadow: 0 0 40px var(--bigglow);
     }
     100% {
-        box-shadow: 0 0 10px var(--regglow);
+        box-shadow: 0 0 20px var(--regglow);
     }
 }
 /* Classes */
@@ -110,6 +111,11 @@ footer a{
 }
 .tab{
     margin: 0px;
+}
+.tabs:hover{
+    --regglow: #78df26;
+    --bigglow: #88ef36;
+    animation: pulseGlow 3s infinite;
 }
 .desc{
     float: right;
@@ -131,12 +137,11 @@ footer a{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: #4C3A63;
-    border: 2px solid #4C3A63;
+    background-color: #906d4c;
     box-shadow: 0 0 20px #6C5A70;
     border-radius: 10px;
-    --regglow: #5C4A60;
-    --bigglow: #6C5A70;
+    --regglow: #a07d5c;
+    --bigglow: #b08d6c;
     animation: pulseGlow 3s infinite;
     height: 850px;
     width: 100%;
@@ -155,11 +160,10 @@ footer a{
     width: 300px;
     justify-self: center;
     height: 70px;
-    background-color: #7FFFD4;
+    /* background-color: #7FFFD4; */
     font-size: 70px;
 }
 .code{
-    /* Chatgpt helped me with the filter */
     filter: brightness(65%);
 }
 .small{
@@ -173,8 +177,8 @@ footer a{
     margin-bottom: 20px;
 }
 .divider{
-    border: 2px solid #4B0082;
-    background-color: #4B0082;
+    border: 2px solid #d8b28a;
+    background-color: #d8b28a;
     width: 100%;
 }
 @media (min-width: 700px) {
