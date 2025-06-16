@@ -5,7 +5,7 @@ const sictcbtn = document.querySelector('#sictcbtn');
 
 nextechbtn.addEventListener("click", function() {
     nextech.style.display = "block";
-    nextechbtn.style.backgroundColor = "#d8b28a";
+    nextechbtn.style.backgroundColor = "#DF9999";
     sictc.style.display = "none";
     sictcbtn.style.background = "none";
 });
@@ -13,5 +13,5 @@ sictcbtn.addEventListener("click", function() {
     nextech.style.display = "none";
     nextechbtn.style.background = "none";
     sictc.style.display = "block";
-    sictcbtn.style.backgroundColor = "#d8b28a";
+    sictcbtn.style.backgroundColor = "#DF9999";
 });
