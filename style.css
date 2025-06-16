@@ -4,9 +4,6 @@ table{
     display: flex;
     justify-self: center;
 }
-td, th{
-    border:2px solid #d8b28a;
-}
 img{
     height: 150px;
     margin-left: 15px;
@@ -20,8 +17,6 @@ nav{
     padding:-5em;
     padding-right: 0;
     width: 80%;
-    background-color: #d02d3a;
-    color: #D1D5DB;
     font-size: 25px;
     margin: auto;
     border-radius: 25px;
@@ -34,7 +29,6 @@ nav a{
     text-align: center;
     display: block;
     border-radius: 40px;
-    color: #1f1128;
 }
 nav ul{
     display: flex;
@@ -50,24 +44,13 @@ nav li{
     padding: 0.5em 1em 0 0.5em; /*top right bottom left*/
 }
 /*event handler styling - interact with tag, something happens*/
-nav .link:hover{
-    color: #7FFFD4;
-    --regglow: #40E0D0;
-    --bigglow: #E3FFFB;
-    animation: pulseGlow 3s infinite;
-}
-header{
-    color: #b9aed5;
-    h1 {
-        font-size: 90px;
-    }
+h1 {
+    font-size: 90px;
 }
 h2{
-    color: #68cf16;
     font-size: 35px;
 }
 h3, h4{
-    color: #74ccde;
     font-size: 25px;
 }
 button{
@@ -78,9 +61,6 @@ button{
     margin-top: 0px;
     padding-top: 15px;
 }
-footer a{
-    color: #D2FFF9;
-}
 p{
     font-size: 20px;
 }
@@ -89,8 +69,6 @@ p{
     padding-top: 3em;
     margin:auto;
     width:90vw;
-    background-color: #143157;
-    color: #D0A453;
     font-family: WDXL Lubrifont SC;
 }
 #sictc{
@@ -121,11 +99,6 @@ p{
 }
 .tab{
     margin: 0px;
-}
-.tabs:hover{
-    --regglow: #78df26;
-    --bigglow: #88ef36;
-    animation: pulseGlow 3s infinite;
 }
 .desc{
     float: right;
@@ -219,3 +192,42 @@ p{
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    td, th {
+        border:2px solid #d8b28a;
+    }
+    nav {
+        background-color: #d02d3a;
+        color: #D1D5DB;
+    }
+    nav a {
+        color: #1f1128;
+    }
+    nav .link:hover {
+        color: #7FFFD4;
+        --regglow: #40E0D0;
+        --bigglow: #E3FFFB;
+        animation: pulseGlow 3s infinite;
+    }
+    h1 {
+        color: #b9aed5;
+    }
+    h2 {
+        color: #68cf16;
+    }
+    h3, h4 {
+        color: #74ccde;
+    }
+    footer a {
+        color: #D2FFF9;
+    }
+    #wrapper {
+        background-color: #143157;
+        color: #D0A453;
+    }
+    .tabs:hover{
+        --regglow: #78df26;
+        --bigglow: #88ef36;
+        animation: pulseGlow 3s infinite;
+    }
+}
