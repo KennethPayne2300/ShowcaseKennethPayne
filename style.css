@@ -111,21 +111,11 @@ p{
     padding: 0.5em 1em 0 0.5e;
     border-radius: 100%;
 }
-.logo:hover{
-    --regglow: #A8EF60;
-    --bigglow: #B8FF70;
-    animation: pulseGlow 3s infinite;
-}
 .game-background{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: #906d4c;
-    box-shadow: 0 0 20px #6C5A70;
     border-radius: 10px;
-    --regglow: #a07d5c;
-    --bigglow: #b08d6c;
-    animation: pulseGlow 3s infinite;
     height: 850px;
     width: 100%;
     padding-top: 20px;
@@ -143,7 +133,6 @@ p{
     width: 300px;
     justify-self: center;
     height: 70px;
-    /* background-color: #7FFFD4; */
     font-size: 70px;
 }
 .code{
@@ -160,8 +149,6 @@ p{
     margin-bottom: 20px;
 }
 .divider{
-    border: 2px solid #d8b28a;
-    background-color: #d8b28a;
     width: 100%;
 }
 @media (min-width: 700px) {
@@ -193,6 +180,60 @@ p{
 }
 
 @media (prefers-color-scheme: dark) {
+    td, th {
+        border:2px solid #d8b28a;
+    }
+    nav {
+        background-color: #ff5d6b;
+    }
+    nav a {
+        color: #1f1128;
+    }
+    nav .link:hover {
+        color: #4F006B;
+        --regglow: #5F107B;
+        --bigglow: #6F208B;
+        animation: pulseGlow 3s infinite;
+    }
+    h1 {
+        color: #380000;
+    }
+    h2 {
+        color: #366A0B;
+    }
+    h3, h4 {
+        color: #1C6978;
+    }
+    footer a {
+        color: #006B5D;
+    }
+    #wrapper {
+        background-color: #C8DDF9;
+        color: #921AC1;
+    }
+    .tabs:hover{
+        --regglow: #78df26;
+        --bigglow: #88ef36;
+        animation: pulseGlow 3s infinite;
+    }
+    .logo:hover{
+        --regglow: #A8EF60;
+        --bigglow: #B8FF70;
+        animation: pulseGlow 3s infinite;
+    }
+    .game-background {
+        background-color: #906d4c;
+        box-shadow: 0 0 20px #6C5A70;
+        --regglow: #a07d5c;
+        --bigglow: #b08d6c;
+        animation: pulseGlow 3s infinite;
+    }
+    .divider {
+        border: 2px solid #d8b28a;
+        background-color: #d8b28a;
+    }
+}
+@media (prefers-color-scheme: light) {
     td, th {
         border:2px solid #d8b28a;
     }
@@ -229,5 +270,21 @@ p{
         --regglow: #78df26;
         --bigglow: #88ef36;
         animation: pulseGlow 3s infinite;
+    }
+    .logo:hover{
+        --regglow: #A8EF60;
+        --bigglow: #B8FF70;
+        animation: pulseGlow 3s infinite;
+    }
+    .game-background {
+        background-color: #906d4c;
+        box-shadow: 0 0 20px #6C5A70;
+        --regglow: #a07d5c;
+        --bigglow: #b08d6c;
+        animation: pulseGlow 3s infinite;
+    }
+    .divider {
+        border: 2px solid #d8b28a;
+        background-color: #d8b28a;
     }
 }
