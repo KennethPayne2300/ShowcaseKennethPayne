@@ -1,3 +1,4 @@
+// tabs for html
 const nextech = document.querySelector('#nextech');
 const nextechbtn = document.querySelector('#nextechbtn');
 const sictc = document.querySelector('#sictc');
@@ -15,3 +16,6 @@ sictcbtn.addEventListener("click", function() {
     sictc.style.display = "block";
     sictcbtn.style.backgroundColor = "#DF9999";
 });
+
+// dark/light mode
+// let toggle = document.
