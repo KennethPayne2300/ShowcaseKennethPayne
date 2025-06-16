@@ -1,21 +1,16 @@
-// tabs for html
-const nextech = document.querySelector('#nextech');
-const nextechbtn = document.querySelector('#nextechbtn');
-const sictc = document.querySelector('#sictc');
-const sictcbtn = document.querySelector('#sictcbtn');
-
-nextechbtn.addEventListener("click", function() {
-    nextech.style.display = "block";
-    nextechbtn.style.backgroundColor = "#DF9999";
-    sictc.style.display = "none";
-    sictcbtn.style.background = "none";
-});
-sictcbtn.addEventListener("click", function() {
-    nextech.style.display = "none";
-    nextechbtn.style.background = "none";
-    sictc.style.display = "block";
-    sictcbtn.style.backgroundColor = "#DF9999";
-});
-
 // dark/light mode
-// let toggle = document.
+let toggle = document.querySelector("#darkmode");
+
+toggle.addEventListener("click", function() {
+    let body = document.querySelector("#wrapper");
+    
+    if (body.className === "light") {
+        body.className = "dark";
+        toggle.style.backgroundColor = "white";
+        toggle.style.color = "black";
+    } else {
+        body.className = "light";
+        toggle.style.backgroundColor = "black";
+        toggle.style.color = "white";
+    }
+})
