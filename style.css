@@ -49,6 +49,8 @@ h1 {
 }
 h2{
     font-size: 35px;
+    width: max-content;
+    border-radius: 50px;
 }
 h3, h4{
     font-size: 25px;
@@ -89,6 +91,9 @@ p{
     }
 }
 /* Classes */
+.websiteLink {
+    padding: 10px 20px;
+}
 .switch{
     background-color: black;
     color: white;
@@ -220,6 +225,11 @@ p{
         --bigglow: #6F208B;
         animation: pulseGlow 3s infinite;
     }
+    .websiteLink:hover {
+        --regglow: #385D1A;
+        --bigglow: #486D2A;
+        animation: pulseGlow 3s infinite;
+    }
     .game-background {
         background-color: #906d4c;
         box-shadow: 0 0 20px #6C5A70;
@@ -236,7 +246,7 @@ p{
     background-color: #143157;
     color: #D0A453;
     td, th {
-        border:2px solid #d8b28a;
+        border:2px solid #74614d;
     }
     nav {
         background-color: #d02d3a;
@@ -264,13 +274,18 @@ p{
         color: #D2FFF9;
     }
     .tabs:hover{
-        --regglow: #78df26;
-        --bigglow: #88ef36;
+        --regglow: #84715d;
+        --bigglow: #94816d;
         animation: pulseGlow 3s infinite;
     }
     .logo:hover{
         --regglow: #A8EF60;
         --bigglow: #B8FF70;
+        animation: pulseGlow 3s infinite;
+    }
+    .websiteLink:hover {
+        --regglow: #78df26;
+        --bigglow: #88ef36;
         animation: pulseGlow 3s infinite;
     }
     .game-background {
@@ -281,7 +296,7 @@ p{
         animation: pulseGlow 3s infinite;
     }
     .divider {
-        border: 2px solid #d8b28a;
-        background-color: #d8b28a;
+        border: 2px solid #74614d;
+        background-color: #74614d;
     }
 }
