@@ -231,10 +231,9 @@ p{
         animation: pulseGlow 3s infinite;
     }
     .game-background {
-        background-color: #906d4c;
-        box-shadow: 0 0 20px #6C5A70;
-        --regglow: #a07d5c;
-        --bigglow: #b08d6c;
+        background-color: #815329;
+        --regglow: #916339;
+        --bigglow: #a17349;
         animation: pulseGlow 3s infinite;
     }
     .divider {
@@ -293,7 +292,6 @@ p{
     }
     .game-background {
         background-color: #906d4c;
-        box-shadow: 0 0 20px #6C5A70;
         --regglow: #a07d5c;
         --bigglow: #b08d6c;
         animation: pulseGlow 3s infinite;
