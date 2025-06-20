@@ -76,6 +76,9 @@ p{
 #sictc{
     display: none;
 }
+#pic2, #pic3, #pic4, #pic5 {
+    display: none;
+}
 
 /* functions */
 /* Chatgpt helped me with this */
@@ -168,7 +171,7 @@ p{
         float: right;
         width: 300px;
         height: auto;
-        border-radius: 50%;
+        border-radius: 100%;
     }
 }
 @media (max-width: 700px) {
@@ -181,7 +184,7 @@ p{
     .profile {
         width: 300px;
         height: auto;
-        border-radius: 50%;
+        border-radius: 100%;
     }
 }
 
