@@ -73,9 +73,26 @@ p{
     width:90vw;
     font-family: WDXL Lubrifont SC;
 }
-/* #pic2, #pic3, #pic4, #pic5 {
-    display: none;
-} */
+#dragon1 {
+    top: 250px;
+    left: -400px;
+}
+#dragon2 {
+    top: 400px;
+    left: -400px;
+}
+#dragon3 {
+    top: 550px;
+    left: -200px;
+}
+#dragon4 {
+    top: 450px;
+    left: -100px;
+}
+#dragon5 {
+    top: 100px;
+    left: -400px;
+}
 
 /* functions */
 /* Chatgpt helped me with this */
@@ -189,8 +206,6 @@ p{
 }
 .dragon {
     position:fixed;
-    top: 250px;
-    left: -400px;
     display:flex;
     z-index: -1;
     animation: moveRight 10s linear infinite;
