@@ -10,20 +10,27 @@ img{
     margin-right: 15px;
 }
 nav{
-    position: fixed; /* no moving when flexing... */
-    top: 10px;
-    left: 150px;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    padding:-5em;
+    /* padding:-5em; */
     padding-right: 0;
-    width: 80%;
+    width: 100%;
     font-size: 25px;
-    margin: auto;
     border-radius: 25px;
-    z-index: 9999; /*this will make sure it is always on top*/
 }
 a{
     text-decoration: none;
+}
+.nav {
+    z-index: 9999; /*this will make sure it is always on top*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
 }
 nav a{
     text-align: center;
@@ -34,7 +41,8 @@ nav ul{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    margin: 0;
+    max-width: 80%;
+    min-width: 200px;
     font-size: 1.2em;
     list-style-type: none;
 }
@@ -242,7 +250,7 @@ p{
     td, th {
         border:2px solid #DF9999;
     }
-    nav {
+    nav ul {
         background-color: #ff5d6b;
     }
     nav a {
@@ -305,8 +313,10 @@ p{
         border:2px solid #74614d;
     }
     nav {
-        background-color: #d02d3a;
         color: #D1D5DB;
+    }
+    nav ul {
+        background-color: #d02d3a;
     }
     nav a {
         color: #1f1128;
