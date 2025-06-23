@@ -2,8 +2,14 @@
 let toggle = document.querySelector("#darkmode");
 let body = document.querySelector("#wrapper");
 
-let mode = localStorage.getItem("mode");
+let mode = "light";
 
+// make sure there is a "mode" key in the localStorage
+if (localStorage.getItem("mode") !== null){
+    mode = localStorage.getItem("mode");
+};
+
+// make it be the corresponding colors
 if (mode === "light") {
     body.className = "light";
     toggle.style.backgroundColor = "black";
@@ -15,7 +21,7 @@ if (mode === "light") {
 }
 
 toggle.addEventListener("click", function() {
-    
+    // everytime the toggle button is clicked switch the modes
     if (mode === "light") {
         body.className = "dark";
         mode = "dark";
@@ -78,6 +84,7 @@ let sictcbtn = document.querySelector('#sictcbtn');
 nextech.style.display = "block";
 sictc.style.display = "none";
 
+// when the buttons are clicked make the corresponding ones on and the other ones off
 nextechbtn.addEventListener("click", function() {
     nextech.style.display = "block";
     nextechbtn.classList.add("tabon");
