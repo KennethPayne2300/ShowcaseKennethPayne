@@ -127,12 +127,17 @@ p{
     }
 }
 /* Classes */
+.arrow {
+    font-size: 20px;
+    cursor: pointer;
+}
 .websiteLink {
     padding: 10px 20px;
 }
 .switch{
     background-color: black;
     color: white;
+    cursor: pointer;
 }
 .tabs{
     border-top-left-radius: 50%;
@@ -141,6 +146,7 @@ p{
 }
 .tab{
     margin: 0px;
+    cursor: pointer;
 }
 .desc{
     float: right;
@@ -275,6 +281,9 @@ p{
         --bigglow: #486D2A;
         animation: pulseGlow 3s infinite;
     }
+    .arrow {
+        color: #154F5B;
+    }
     .game-background {
         background-color: #815329;
         --regglow: #916339;
@@ -334,6 +343,9 @@ p{
         --regglow: #78df26;
         --bigglow: #88ef36;
         animation: pulseGlow 3s infinite;
+    }
+    .arrow {
+        color: #74ccde;
     }
     .game-background {
         background-color: #906d4c;
