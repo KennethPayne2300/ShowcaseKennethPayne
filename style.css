@@ -73,12 +73,9 @@ p{
     width:90vw;
     font-family: WDXL Lubrifont SC;
 }
-#sictc{
+/* #pic2, #pic3, #pic4, #pic5 {
     display: none;
-}
-#pic2, #pic3, #pic4, #pic5 {
-    display: none;
-}
+} */
 
 /* functions */
 /* Chatgpt helped me with this */
@@ -91,6 +88,17 @@ p{
     }
     100% {
         box-shadow: 0 0 20px var(--regglow);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 /* Classes */
@@ -160,31 +168,29 @@ p{
 .divider{
     width: 100%;
 }
+.profile {
+    width: 300px;
+    height: auto;
+    border-radius: 100%;
+    animation: fadeIn 3s infinite;
+}
 @media (min-width: 700px) {
-    .mobile{
+    #mobile{
         display: none;
     }
-    .desktop{
+    #desktop{
         display: flex;
     }
     .profile {
         float: right;
-        width: 300px;
-        height: auto;
-        border-radius: 100%;
     }
 }
 @media (max-width: 700px) {
-    .mobile{
+    #mobile{
         display: flex;
     }
-    .desktop{
+    #desktop{
         display: none;
-    }
-    .profile {
-        width: 300px;
-        height: auto;
-        border-radius: 100%;
     }
 }
 

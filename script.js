@@ -38,35 +38,26 @@ toggle.addEventListener("click", function() {
 
 // picswitch
 function picSwap() {
-    let pic1 = document.querySelector("#pic1");
-    let pic2 = document.querySelector("#pic2");
-    let pic3 = document.querySelector("#pic3");
-    let pic4 = document.querySelector("#pic4");
-    let pic5 = document.querySelector("#pic5");
+    let profile = document.querySelector(".profile");
     
     let pic = 1;
-    let id = setInterval(frame, 1500);
+    let id = setInterval(frame, 3000);
 
     function frame() {
         if (pic === 1) {
-            pic1.style.display = "none";
-            pic2.style.display = "block";
+            profile.src = "https://images.pexels.com/photos/6624305/pexels-photo-6624305.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
             pic = 2;
         } else if (pic === 2) {
-            pic2.style.display = "none";
-            pic3.style.display = "block";
+            profile.src = "https://st2.depositphotos.com/2931363/6569/i/450/depositphotos_65699901-stock-photo-black-man-keeping-arms-crossed.jpg";
             pic = 3;
         } else if (pic === 3) {
-            pic3.style.display = "none";
-            pic4.style.display = "block";
+            profile.src = "https://image.shutterstock.com/image-photo/young-brazilian-man-isolated-on-260nw-2242569333.jpg";
             pic = 4;
         } else if (pic === 4) {
-            pic4.style.display = "none";
-            pic5.style.display = "block";
+            profile.src = "https://i.redd.it/j02itmog3t721.jpg";
             pic = 5;
         } else if (pic === 5) {
-            pic5.style.display = "none";
-            pic1.style.display = "block";
+            profile.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGh5WFH8TOIfRKxUrIgJZoDCs1yvQ4hIcppw&s";
             pic = 1;
         }
     }
