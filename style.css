@@ -357,6 +357,7 @@ p{
     }
     .content {
         background-color: rgba(20, 49, 87, 0.7);
+        padding: 20px;
     }
     .arrow {
         color: #74ccde;
