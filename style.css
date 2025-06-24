@@ -311,6 +311,9 @@ p{
         --bigglow: #486D2A;
         animation: pulseGlow 3s infinite;
     }
+    .contacts {
+        color: #154F5B;
+    }
     .content {
         background-color: rgba(118, 164, 224, 0.7);
         padding: 20px;
@@ -381,7 +384,7 @@ p{
         animation: pulseGlow 3s infinite;
     }
     .contacts {
-        color: #D2FFF9;
+        color: #74ccde;
     }
     .content {
         background-color: rgba(20, 49, 87, 0.7);
