@@ -99,7 +99,10 @@ p{
     top: 100px;
     left: -400px;
 }
-
+#nextech, #sictc {
+    display: flex;
+    justify-content: center;
+}
 /* functions */
 /* Chatgpt helped me with this */
 @keyframes pulseGlow {
@@ -221,6 +224,23 @@ p{
     display:flex;
     z-index: -1;
     animation: moveRight 10s linear infinite;
+}
+.display {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
+.column {
+    width: 50%;
+    min-width: 300px;
+}
+.item {
+    margin: 0px;
+    margin-bottom: 20px;
+    height: 250px;
+    text-align: center;
 }
 @media (min-width: 700px) {
     .mobile{

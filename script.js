@@ -76,12 +76,12 @@ if(document.querySelector("#nextech")) {
     let sictcbtn = document.querySelector('#sictcbtn');
     
     // Set initial state
-    nextech.style.display = "block";
+    nextech.style.display = "flex";
     sictc.style.display = "none";
     
     // when the buttons are clicked make the corresponding ones on and the other ones off
     nextechbtn.addEventListener("click", function() {
-        nextech.style.display = "block";
+        nextech.style.display = "flex";
         nextechbtn.classList.add("tabon");
         sictc.style.display = "none";
         sictcbtn.classList.remove("tabon");
@@ -89,7 +89,7 @@ if(document.querySelector("#nextech")) {
     sictcbtn.addEventListener("click", function() {
         nextech.style.display = "none";
         nextechbtn.classList.remove("tabon");
-        sictc.style.display = "block";
+        sictc.style.display = "flex";
         sictcbtn.classList.add("tabon");
     });
 }
