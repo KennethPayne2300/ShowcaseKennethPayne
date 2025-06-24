@@ -39,7 +39,7 @@ nav ul{
     flex-wrap: wrap;
     border-radius: 25px;
     justify-content: center;
-    max-width: 85%;
+    width: 85%;
     min-width: 200px;
     font-size: 1.2em;
     list-style-type: none;
