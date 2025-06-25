@@ -106,6 +106,9 @@ p{
     display: flex;
     justify-content: center;
 }
+#me {
+    animation: fadeIn 3s infinite;
+}
 /* functions */
 /* Chatgpt helped me with this */
 @keyframes pulseGlow {
@@ -145,7 +148,7 @@ p{
     .desktop{
         display: flex;
     }
-    .profile {
+    #me {
         float: right;
     }
 }
@@ -233,7 +236,6 @@ p{
     width: 300px;
     height: auto;
     border-radius: 100%;
-    animation: fadeIn 3s infinite;
 }
 .favoritestuff {
     height: auto;
@@ -252,13 +254,13 @@ p{
   width: 100%;
 }
 .column {
-    width: auto;
+    width: 50%;
     min-width: 300px;
     text-align: center;
 }
 .contacts {
     display: block;
-    font-size: 15vw;
+    font-size: 10vw;
     margin-bottom: 80px;
 }
 .item {

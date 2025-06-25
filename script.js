@@ -38,7 +38,7 @@ toggle.addEventListener("click", function() {
 
 // picswitch
 function picSwap() {
-    let profile = document.querySelector(".profile");
+    let profile = document.querySelector("#me");
     
     let pic = 1;
     let id = setInterval(frame, 3000);
