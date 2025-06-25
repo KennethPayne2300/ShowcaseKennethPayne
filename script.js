@@ -108,4 +108,4 @@ footer.innerHTML = `
         </p>
     </footer>`;
     
-body.appendChild(footer);
+document.querySelector(".content").appendChild(footer);
