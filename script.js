@@ -69,57 +69,29 @@ if(document.querySelector(".profile")) {
 
 // organisation swap
 // tabs for html
-if(document.querySelector("#nextech")) {
-    let nextech = document.querySelector('#nextech');
-    let nextechbtn = document.querySelector('#nextechbtn');
-    let sictc = document.querySelector('#sictc');
-    let sictcbtn = document.querySelector('#sictcbtn');
+if(document.querySelector("#tab1")) {
+    let tab1 = document.querySelector('#tab1');
+    let tab1btn = document.querySelector('#tab1btn');
+    let tab2 = document.querySelector('#tab2');
+    let tab2btn = document.querySelector('#tab2btn');
     
     // Set initial state
-    nextech.style.display = "flex";
-    sictc.style.display = "none";
+    tab1.style.display = "flex";
+    tab2.style.display = "none";
     
     // when the buttons are clicked make the corresponding ones on and the other ones off
-    nextechbtn.addEventListener("click", function() {
-        nextech.style.display = "flex";
-        nextechbtn.classList.add("tabon");
-        sictc.style.display = "none";
-        sictcbtn.classList.remove("tabon");
+    tab1btn.addEventListener("click", function() {
+        tab1.style.display = "flex";
+        tab1btn.classList.add("tabon");
+        tab2.style.display = "none";
+        tab2btn.classList.remove("tabon");
     });
-    sictcbtn.addEventListener("click", function() {
-        nextech.style.display = "none";
-        nextechbtn.classList.remove("tabon");
-        sictc.style.display = "flex";
-        sictcbtn.classList.add("tabon");
+    tab2btn.addEventListener("click", function() {
+        tab1.style.display = "none";
+        tab1btn.classList.remove("tabon");
+        tab2.style.display = "flex";
+        tab2btn.classList.add("tabon");
     });
 }
 
 // table swap
-
-if (document.querySelector(".artclass")) {
-    let artclass = document.querySelector(".artclass");
-    let others = document.querySelector(".others");
-    let artclassbtn = document.querySelector("#class");
-    let othersbtn = document.querySelector("#others");
-
-    // initial state
-    artclass.style.display = "flex";
-    artclassbtn.style.transform = "rotate(0deg)";
-    others.style.display = "none";
-    othersbtn.style.transform = "rotate(180deg)";
-
-    // when the buttons are clicked make the corresponding ones on and the other ones off
-    artclassbtn.addEventListener("click", function() {
-        artclass.style.display = "flex";
-        artclassbtn.style.transform = "rotate(0deg)";
-        others.style.display = "none";
-        othersbtn.style.transform = "rotate(180deg)";
-    });
-
-    othersbtn.addEventListener("click", function() {
-        artclass.style.display = "none";
-        artclassbtn.style.transform = "rotate(180deg)";
-        others.style.display = "flex";
-        othersbtn.style.transform = "rotate(0deg)";
-    });
-}

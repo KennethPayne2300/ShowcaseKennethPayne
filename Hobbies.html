@@ -34,8 +34,15 @@
                 <img src="https://cdnb.artstation.com/p/assets/images/images/052/586/091/original/cecihoney-dragon-flight.gif?1660165746" class="dragon" id="dragon4">
                 <img src="https://www.kadrane.com/divers/dragon-fly-col-550.gif" class="dragon" id="dragon5">
                 <h2>Non-coding related creations</h2>
-                <h3>3d art class <button class="arrow" id="class"><i class="fa-duotone fa-solid fa-caret-up"></i></button> <span style="margin-left: 50px;">Other things <button class="arrow" id="others"><i class="fa-duotone fa-solid fa-caret-up"></i></button></span></h3>
-                <table class="artclass">
+                <table>
+                    <tr>
+                        <th class="tabs"><button id="tab1btn" class="tabon"><h2 class="tab">3d ArtClass</h2></button></th>
+                        <th class="tabs"><button id="tab2btn"><h2 class="tab">Others</h2></button></th>
+                    </tr>
+                </table>
+                <div class="small divider"></div>
+                <br>
+                <table id="tab1">
                     <tr>
                         <th width="50%">
                             <p style="display: inline; margin-right: 5%;">Pictures</p>
@@ -99,7 +106,7 @@
                         </td>
                     </tr>
                 </table>
-                <table class="others">
+                <table id="tab2">
                     <tr>
                         <th width="50%">
                             <p style="display: inline; margin-right: 5%;">Pictures</p>
