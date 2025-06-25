@@ -1,19 +1,3 @@
-// footer
-let footer = document.createElement("footer");
-
-footer.innerHTML = `
-    <div class="small divider"></div>
-    <footer>
-        <p>
-            Evansville IN USA<br>
-            Contact: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kennethpayne353@gmail.com" target="_blank">Kenneth.payne353@gmail.com</a><br>
-            <a href="tel:812-604-3956" class="mobile">812-604-3956</a>
-            <span class="desktop">812-604-3956</span>
-        </p>
-    </footer>`;
-    
-body.appendChild(footer);
-
 // dark/light mode
 let toggle = document.querySelector("#darkmode");
 let body = document.querySelector("#wrapper");
@@ -109,3 +93,19 @@ if(document.querySelector("#tab1")) {
         tab2btn.classList.add("tabon");
     });
 }
+
+// footer
+let footer = document.createElement("footer");
+
+footer.innerHTML = `
+    <div class="small divider"></div>
+    <footer>
+        <p>
+            Evansville IN USA<br>
+            Contact: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kennethpayne353@gmail.com" target="_blank">Kenneth.payne353@gmail.com</a><br>
+            <a href="tel:812-604-3956" class="mobile">812-604-3956</a>
+            <span class="desktop">812-604-3956</span>
+        </p>
+    </footer>`;
+    
+body.appendChild(footer);
