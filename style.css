@@ -258,6 +258,15 @@ p{
     min-width: 300px;
     text-align: center;
 }
+.info-box {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    width: 25%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
 .contacts {
     display: block;
     font-size: 10vw;
@@ -267,7 +276,7 @@ p{
     display: block;
     margin: 0px;
     margin-bottom: 20px;
-    height: 250px;
+    width: 100%;
     text-align: center;
 }
 
