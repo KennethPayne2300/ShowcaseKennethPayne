@@ -58,7 +58,7 @@ h1 {
 }
 h2{
     font-size: 35px;
-    width: max-content;
+    width: auto;
     border-radius: 50px;
 }
 h3, h4{
