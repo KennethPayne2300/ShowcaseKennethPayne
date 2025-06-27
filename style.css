@@ -259,9 +259,10 @@ p{
     text-align: center;
 }
 .info-box {
+    /* display: inline; */
     padding: 10px;
     margin: 20px;
-    /* width: 25%; */
+    height: 150px;
     border: 2px solid #fff;
     border-radius: 5px;
 }
@@ -282,8 +283,10 @@ p{
 .light {
     background-color: #76a4e0;
     color: #921AC1;
-    td, th {
-        border:2px solid #DF9999;
+    .hobbies {
+        td, th {
+            border:2px solid #DF9999;
+        }
     }
     nav ul {
         background-color: #ff5d6b;
@@ -323,6 +326,9 @@ p{
         --regglow: #385D1A;
         --bigglow: #486D2A;
         animation: pulseGlow 3s infinite;
+    }
+    .tabs {
+        border:2px solid #DF9999;
     }
     .contacts {
         color: #154F5B;
