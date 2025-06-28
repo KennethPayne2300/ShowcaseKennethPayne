@@ -259,12 +259,15 @@ p{
     text-align: center;
 }
 .info-box {
-    /* display: inline; */
+    /* display: inline-block; */
     padding: 10px;
-    margin: 20px;
-    height: 150px;
+    margin-left: 20px;
+    width: 100%;
     border: 2px solid #fff;
     border-radius: 5px;
+    img {
+        width: 150px;
+    }
 }
 .contacts {
     display: block;
