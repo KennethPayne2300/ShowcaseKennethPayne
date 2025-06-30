@@ -5,7 +5,7 @@ nav.innerHTML = `
     <div class="nav">
         <nav>
             <ul>
-                <button class="switch" id="darkmode">Toggle dark mode</button>
+                <button class="switch" id="darkmode">change to dark mode</button>
                 <a href="index.html"><img class="logo" src="Assets/KennethPayneLogo.png" alt="Keneth Payne Logo"></a>
                 <li><a href="index.html" class="link" id="home">Home</a></li>
                 <li><a href="About.html" class="link" id="about">About Me!</a></li>

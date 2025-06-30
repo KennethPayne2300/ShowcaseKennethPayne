@@ -14,10 +14,12 @@ if (mode === "light") {
     body.className = "light";
     toggle.style.backgroundColor = "black";
     toggle.style.color = "white";
+    toggle.innerHTML = "change to dark mode";
 } else {
     body.className = "dark";
     toggle.style.backgroundColor = "white";
     toggle.style.color = "black";
+    toggle.innerHTML = "change to light mode";
 }
 
 toggle.addEventListener("click", function() {
@@ -27,11 +29,13 @@ toggle.addEventListener("click", function() {
         mode = "dark";
         toggle.style.backgroundColor = "white";
         toggle.style.color = "black";
+        toggle.innerHTML = "change to light mode";
     } else {
         body.className = "light";
         mode = "light"
         toggle.style.backgroundColor = "black";
         toggle.style.color = "white";
+        toggle.innerHTML = "change to dark mode";
     };
     localStorage.setItem("mode", mode);
 });
