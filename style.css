@@ -147,10 +147,10 @@ p{
 }
 @keyframes scrollRight {
     0% {
-        transform: translateX(0%);
+        transform: translateX(-50%);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(0%);
     }
 }
 @media (min-width: 700px) {
@@ -278,7 +278,7 @@ p{
     display: flex;
     gap: 40px;
     min-width: 200%;
-    animation: scrollRight 13s linear infinite;
+    animation: scrollRight 24s linear infinite;
 }
 .info-box {
   color:white;
