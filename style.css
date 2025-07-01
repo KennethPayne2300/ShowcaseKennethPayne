@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+SC&display=swap');
 
+* {
+    transition: all 1s ease;
+}
 table{
     width: 100%;
     justify-content: center;
@@ -286,7 +289,6 @@ p{
   padding: 16px;
   width: 300px;
   height: 180px;
-  transition: all 0.5s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
