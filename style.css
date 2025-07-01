@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+SC&display=swap');
-
-* {
-    transition: all 1s ease;
-}
 table{
     width: 100%;
     justify-content: center;
@@ -287,8 +283,8 @@ p{
   color:white;
   border-radius: 10px;
   padding: 16px;
-  width: 300px;
-  height: 180px;
+  width: 10%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -308,10 +304,16 @@ p{
     height: auto;
     text-align: center;
 }
+.content {
+    padding: 20px;
+}
 
 .light {
     background-color: #76a4e0;
     color: #921AC1;
+    * {
+        transition: all 0.5s ease;
+    }
     .hobbies {
         td, th {
             border:2px solid #DF9999;
@@ -367,7 +369,6 @@ p{
     }
     .content {
         background-color: rgba(118, 164, 224, 0.7);
-        padding: 20px;
     }
     .arrow {
         color: #154F5B;
@@ -389,6 +390,9 @@ p{
 .dark {
     background-color: #143157;
     color: #D0A453;
+    * {
+        transition: all 0.5s ease;
+    }
     .hobbies {
         td, th {
             border:2px solid #74614d;
@@ -447,7 +451,6 @@ p{
     }
     .content {
         background-color: rgba(20, 49, 87, 0.7);
-        padding: 20px;
     }
     .arrow {
         color: #74ccde;
