@@ -364,7 +364,7 @@ p{
         animation: pulseGlow 3s infinite;
     }
     .info-box {
-        background-color: rgba(138, 83, 153, 0.7);
+        background-color: #8a5399b3;
     }
     .tabs {
         border:2px solid #DF9999;
@@ -373,7 +373,7 @@ p{
         color: #154F5B;
     }
     .content {
-        background-color: rgba(118, 164, 224, 0.7);
+        background-color: #76a4e0b3;
     }
     .arrow {
         color: #154F5B;
@@ -451,7 +451,7 @@ p{
         animation: pulseGlow 3s infinite;
     }
     .info-box {
-        background-color: rgba(106, 52, 121, 0.7);
+        background-color: #6a3479b3;
     }
     .tabs {
         border:2px solid #74614d;
@@ -460,7 +460,7 @@ p{
         color: #74ccde;
     }
     .content {
-        background-color: rgba(20, 49, 87, 0.7);
+        background-color: #143157b3;
     }
     .arrow {
         color: #74ccde;
