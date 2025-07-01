@@ -65,15 +65,15 @@ nav li{
 }
 /*event handler styling - interact with tag, something happens*/
 h1 {
-    font-size: 90px;
+    font-size: 100px;
 }
 h2{
-    font-size: 35px;
+    font-size: 40px;
     width: auto;
     border-radius: 50px;
 }
 h3, h4{
-    font-size: 25px;
+    font-size: 30px;
 }
 button{
     background: none;
@@ -84,7 +84,7 @@ button{
     padding-top: 15px;
 }
 p{
-    font-size: 20px;
+    font-size: 25px;
 }
 /* id section */
 #wrapper{
