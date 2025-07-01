@@ -52,7 +52,7 @@ function picSwap() {
             profile.src = "Assets/HeadShots/Headshot2.png";
             pic = 2;
         } else if (pic === 2) {
-            profile.src = "Assets/Headhots/Headshot1.png";
+            profile.src = "Assets/HeadShots/Headshot1.png";
             pic = 1;
         }
     }
