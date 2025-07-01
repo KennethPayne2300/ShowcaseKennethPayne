@@ -58,7 +58,7 @@ function picSwap() {
     }
 }
 
-if(document.querySelector(".profile")) {
+if(document.querySelector("#me")) {
     picSwap();
 }
 
