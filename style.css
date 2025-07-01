@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+SC&display=swap');
+/* Sources
+    Chun Ngai Ho: helped with the revolving programing languages.
+    W3Schools: helped with many of the css stuff I didn't know about/how to use like the transitions or the @keyframes.
+    Google AI told me how to do some of the js stuff (I did not copy and paste it was just a resource to help figure stuff out.
+    https://imagecolorpicker.com/?authuser=0 for the dark mode color scheme (I just tweaked the dark mode colors for the light mode)
+    https://fonts.google.com/?authuser=0 for the font
+*/
 table{
     width: 100%;
     justify-content: center;
