@@ -275,7 +275,7 @@ p{
 }
 .slider-track {
     display: flex;
-    gap: 40px;
+    /* gap: 40px; */
     min-width: 200%;
     animation: scrollRight 24s linear infinite;
 }
@@ -284,11 +284,11 @@ p{
   border-radius: 10px;
   padding: 16px;
   width: 10%;
+  margin: 40px;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-shrink: 0;
   text-align: center;
 }
 .contacts {
@@ -356,6 +356,11 @@ p{
     .websiteLink:hover {
         --regglow: #385D1A;
         --bigglow: #486D2A;
+        animation: pulseGlow 3s infinite;
+    }
+    .info-box:hover {
+        --regglow: #9a63a9;
+        --bigglow: #aa73b9;
         animation: pulseGlow 3s infinite;
     }
     .info-box {
@@ -438,6 +443,11 @@ p{
     .websiteLink:hover {
         --regglow: #78df26;
         --bigglow: #88ef36;
+        animation: pulseGlow 3s infinite;
+    }
+    .info-box:hover {
+        --regglow: #7a4489;
+        --bigglow: #8a5499;
         animation: pulseGlow 3s infinite;
     }
     .info-box {
