@@ -52,6 +52,18 @@ function picSwap() {
             profile.src = "Assets/HeadShots/Headshot2.png";
             pic = 2;
         } else if (pic === 2) {
+            profile.src = "Assets/HeadShots/Headshot3.png";
+            pic = 3;
+        } else if (pic === 3) {
+            profile.src = "Assets/HeadShots/Headshot4.png";
+            pic = 4;
+        } else if (pic === 4) {
+            profile.src = "Assets/HeadShots/Headshot5.png";
+            pic = 5;
+        } else if (pic === 5) {
+            profile.src = "Assets/HeadShots/Headshot6.png";
+            pic = 6;
+        } else if (pic === 6) {
             profile.src = "Assets/HeadShots/Headshot1.png";
             pic = 1;
         }
