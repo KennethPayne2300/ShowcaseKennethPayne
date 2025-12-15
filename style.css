@@ -21,26 +21,21 @@ img{
     margin-right: 15px;
 }
 nav{
+    z-index: 9998; /*this will make sure it is always on top*/
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     text-align: center;
+    height: auto;
     width: 100%;
     font-size: 25px;
 }
 a{
     text-decoration: none;
 }
-.nav {
-    z-index: 9999; /*this will make sure it is always on top*/
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-}
-nav a{
+nav a, nav .dropdownBtn{
     text-align: center;
     display: block;
     border-radius: 40px;
@@ -59,9 +54,38 @@ nav li{
     position: relative;
     top: 5px;
     display: inline;
-    width: 5em;
+    width: 8em;
     padding: 0.5em 1em 0 0.5em; /*top right bottom left*/
     margin-bottom: 0.5em;
+}
+.dropdownMenu{
+    /* z-index: 9999; */
+    position: relative;
+    top: 5px;
+    display: inline-block;
+}
+.dropdownBtn{
+    position: relative;
+    bottom: 10px;
+    font-size: 0.75em;
+    border:none;
+    cursor:pointer;
+}
+.dropdownContent {
+    display: none; /* Hides the content by default */
+    position: absolute; /* Positions the content relative to the parent .dropdown container */
+    min-width: 160px;
+    left: 0px;
+    border-radius: 25px;
+}
+.dropdownItem{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.dropdownMenu:hover {
+    .dropdownContent {
+        display: block;
+    }
 }
 /*event handler styling - interact with tag, something happens*/
 h1 {
@@ -399,6 +423,9 @@ p{
     .tabon {
         background-color: #DF9999;
     }
+    .dropdownContent{
+        background-color: #ff5d6b;
+    }
 }
 .dark {
     background-color: #143157;
@@ -485,5 +512,8 @@ p{
     }
     .tabon {
         background-color: #74614d;
+    }
+    .dropdownContent{
+        background-color: #d02d3a;
     }
 }

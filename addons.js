@@ -2,19 +2,19 @@
 let nav = document.createElement("nav");
 
 nav.innerHTML = `
-    <div class="nav">
-        <nav>
-            <ul>
-                <button class="switch" id="darkmode">change to dark mode</button>
-                <a href="index.html"><img class="logo" src="Assets/KennethPayneLogo.png" alt="Keneth Payne Logo"></a>
-                <li><a href="index.html" class="link" id="home">Home</a></li>
-                <li><a href="About.html" class="link" id="about">About Me!</a></li>
-                <li><a href="Python.html" class="link" id="python"><i class="fa-brands fa-bold fa-python"></i>Python</a></li>
-                <li><a href="HTML.html" class="link" id="html"><i class="fa-brands fa-bold fa-html5"></i>HTML</a></li>
-                <li><a href="Hobbies.html" class="link" id="hobbies">Hobbies</a></li>
-            </ul>
-        </nav>
-    </div>`;
+    <ul>
+        <button class="switch" id="darkmode">change to dark mode</button>
+        <a href="index.html"><img class="logo" src="Assets/KennethPayneLogo.png" alt="Keneth Payne Logo"></a>
+        <li><a href="index.html" class="link" id="home">Home</a></li>
+        <li><a href="About.html" class="link" id="about">About Me!</a></li>
+        <li><div class="dropdownMenu">
+            <button class="dropdownBtn link"><i class="fa-solid fa-code"></i> Programs</button>
+            <div class="dropdownContent">
+                <a href="Python.html" class="dropdownItem link" id="python"><i class="fa-brands fa-bold fa-python"></i> Python</a>
+                <a href="HTML.html" class="dropdownItem link" id="html"><i class="fa-brands fa-bold fa-html5"></i> HTML</a>
+            </div>
+        <li><a href="Hobbies.html" class="link" id="hobbies">Hobbies</a></li>
+    </ul>`;
 
 document.querySelector(".content").appendChild(nav);
 
