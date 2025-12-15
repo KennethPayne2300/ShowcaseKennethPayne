@@ -277,8 +277,8 @@ p{
     width: 100%;
 }
 .profile {
-    width: 300px;
-    height: auto;
+    width: auto;
+    height: 400px;
     border-radius: 100%;
 }
 .favoritestuff {
