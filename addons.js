@@ -13,6 +13,7 @@ nav.innerHTML = `
                 <a href="Python.html" class="dropdownItem link" id="python"><i class="fa-brands fa-bold fa-python"></i> Python</a>
                 <a href="HTML.html" class="dropdownItem link" id="html"><i class="fa-brands fa-bold fa-html5"></i> HTML</a>
             </div>
+        </li>
         <li><a href="Hobbies.html" class="link" id="hobbies">Hobbies</a></li>
     </ul>`;
 
