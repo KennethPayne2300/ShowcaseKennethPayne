@@ -211,6 +211,8 @@ p{
     background-color: black;
     color: white;
     cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .tabs{
     border-top-left-radius: 50%;
